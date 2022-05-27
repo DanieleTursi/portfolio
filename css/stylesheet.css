@@ -1,0 +1,332 @@
+
+/*rgb(40, 137, 211)*/
+
+
+
+body {
+    margin:0;
+    background-size: cover;
+    position:absolute;
+    box-sizing: border-box;
+    width:100%;
+    background-color: black;
+}
+
+/* NAV section css*/
+
+#header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:150px;
+    background-color: rgb(8, 25, 84);
+    box-shadow: 0px 20px 20px rgb(8, 25, 84);
+}
+
+#header ul li {
+    display:inline-block;
+}
+#header ul li a {
+    text-decoration:none;
+    margin-right: 20px;
+    font-family: 'Teko', sans-serif;
+    font-size: 2vw;
+}
+
+#header ul li a {
+    text-decoration:none;
+    margin-right: 20px;
+    font-family: 'Teko', sans-serif;
+    font-size: 2vw;
+    color:white;
+    position:relative;
+    padding-bottom: 1vw;
+}
+
+
+#header h1 {
+    font-family: 'Caveat', cursive;
+    color: white;
+    margin:0;  
+    font-size:4vw ;
+    padding-left: 15px;
+}
+
+#logo{
+    font-family: 'Caveat', cursive;
+    color: white;
+    margin:0;  
+    font-size:4vw;
+    padding-left: 15px;
+}
+
+#header ul li:hover{
+    transform:scale(1.1);
+    text-shadow:1px 1px 2px rgb(238, 253, 252);
+ }
+ 
+
+#header:hover {
+    box-shadow: 0px 10px 10px white;
+}
+
+/* #header h1:hover{
+    text-shadow:1px 1px 2px rgb(238, 253, 252);
+} */
+
+/* HERO IMAGE SESSION */
+
+#heroimg {
+ background:url(/image/milky-way-984050_1280.jpeg);
+ background-size:cover;
+ width:100%;
+ height:500px;
+ box-shadow: inset  0px -100px 100px black;
+}
+
+.sticky {
+    width:100%;
+    position:fixed;
+}
+
+.menu {
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin:0;
+}
+
+.menu i{
+    padding-right:4px;
+}
+
+.menu ul a{
+     text-decoration:none;
+     color:white;
+
+}
+.menu li {
+    color:white;
+    list-style-type:none;
+}
+
+.menu ul{
+    margin-top: 0px;
+}
+
+
+a {
+    color:white;
+    cursor:pointer;
+}
+
+.menu ul li a:hover{
+    background-color:rgba(191, 44, 44, 0.4) ;
+}
+
+.menu ul li a i:hover{
+    background-color:rgba(191, 44, 44, 0.4) ;
+}
+
+.menu ul li ul {
+    display:none;
+}
+
+.menu ul li:hover ul{
+    display:block;
+}
+
+/* ABOUT section css*/
+
+#about {
+    color:white;
+    padding-top: 7vw;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Caveat', cursive;
+}
+
+#aboutpara {
+    color:white;
+    padding: 1vw 6vw;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.2vw;
+}
+
+
+
+/* MYSKILLS section css*/
+
+
+.title {
+    grid-area:tit;
+    font-family: 'Caveat', cursive;
+    font-size: 3vw;
+    text-shadow: 5px 5px black;
+    color:white;
+}
+.htmlproj{
+    grid-area:htm;
+    width: 10vw;
+    height: 12vw;
+}
+
+.cssproj{
+    grid-area:cs;
+    width: 10vw;
+    height: 12vw;
+  }
+
+.jsproj{
+    grid-area:java;
+    width: 10vw;
+    height: 12vw;
+}
+
+.sql {
+    grid-area:sq;
+    width: 10vw;
+    height: 12vw;
+}
+
+.phyt {
+    grid-area:phyt;
+    width: 10vw;
+    height: 12vw;
+}
+
+#myskills {
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    '  . . tit . .  '
+    ' htm cs java sq phyt ';
+    gap:10px;
+    background-color: rgb(8, 25, 84);
+    box-shadow: inset 0px 0px 20px 20px black;
+}
+
+/* CONTACTS section*/
+
+.name {
+    grid-area: name;
+    width:100%;
+    padding:0 20px;
+    background-color: rgba(255, 255, 255, 0.663);
+    border: solid 2px rgba(0, 0, 0, 0.658);
+    border-radius: 5px;
+    font-size:2vw;
+}
+
+
+
+.email{
+    grid-area: email;
+    width:100%;
+    padding:0 20px;
+    background-color: rgba(255, 255, 255, 0.663);
+    border-radius: 5px;
+    font-size:2vw;
+}
+.comment{
+    grid-area: comment;
+    width:100%;
+    padding:0 20px;
+    background-color: rgba(255, 255, 255, 0.663);
+    border-radius: 5px;
+    font-size:2vw;
+}
+
+.submit{
+    grid-area: sub;
+    width: 25%;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255, 0.492);
+    border-radius:15px;
+    font-family: 'Teko', sans-serif;
+    margin-left:75%;
+}
+
+.submit img {
+    width: 1.5vw;
+    height:1.5vw;
+}
+.reset{
+    grid-area: res;
+    width: 25%;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255, 0.492);
+    border-radius:15px;
+    font-family: 'Teko', sans-serif;
+    margin-right:75%;
+}
+
+.reset img {
+    width: 1.5vw;
+    height:1.5vw;
+}
+
+
+
+
+#contacts {
+    background:url(/image/ca_space.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:grid;
+    grid-template-columns: auto 30% 30% auto;
+    grid-template-rows: 5vw 5vw 15vw 3vw;
+    grid-template-areas:
+    '. name name . ' 
+    '. email email .'
+    '. comment comment .'
+    '. sub res .';
+    grid-gap:20px;
+    padding:50px 0 50px 0;
+    margin:0;
+    box-shadow: inset  0px 50px 100px black;
+}
+
+
+
+footer {
+    width:100%;
+    margin:0;
+    background-color: rgb(8, 25, 84);
+    color: white;
+    text-align:center;
+    padding:10px 0;
+    box-shadow: 0px -10px 20px rgb(8, 25, 84);
+}
+
+.myname{
+    margin:1vw 0;
+    font-size: 1.8vw;
+    font-family: 'Caveat', cursive;
+    font-style: bold;
+}
+
+.myemail{
+    margin:1vw 0;
+    font-size: 1.5vw;
+    font-family: 'Teko', sans-serif;
+}
+
+.myphone{
+    margin:1vw 0;
+    font-size: 1.5vw;
+    font-family: 'Teko', sans-serif;
+}
+
+.social {
+    height:3vw;
+    width:3vw;
+}
+
+    
+
