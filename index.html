@@ -9,48 +9,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Teko:wght@300&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/cb1ab0e1bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>PORTFOLIO</title>
 </head>
 <body>
     <nav>
       <div id="header" class="sticky">
-        <h1>D.TURSI</h1>
+        <h1 id="message"></h1>
         <ul>
             <li><a href="#heroimg" >ABOUT ME</a></li>
-            <li><a href="#about" >SKILLS</a></li>
-            <li><a href="#myskills" >PROJECTS</a></li>
+            <li><a href="#myskills" >SKILLS</a></li>
+            <li><a href="#projects" >PROJECTS</a></li>
             <li><a href="#contacts" >CONTACTS</a></li>
+            <img src="/image/night.png" alt="nightday" id="nightdaymode">
         </ul>
       </div>
 </nav>
-<div id="heroimg">
-  <h2 id="about">ABOUT ME</h2>
+<div class="video-container">
+  <video autoplay muted loop>
+      <source src="/image/Pexels Videos 3931.mp4" type="video/mp4" />
+  </video>
+  <div class="caption">
+    <h2 id="about" class="animate__animated animate__rubberBand animate__delay-5s animate__repeat-3" >ABOUT ME</h2>
   <p id="aboutpara">
     “Hello, I’m Daniele"<br>
-    Technology and programming always been in my head, but life move me around and I never really gave it a chance, <strong> never till now!</strong> <br> Last year, I decide to take what was in my head for years and really give it the time that it deserved. I decide to self-study, spending hours reading and watching a lot of what the web can offer about programming. Day by day I made little steps till I realise that was time to fully dive in. <br> This day, I decide to join a bootcamp, JustIT offered me the opportunity, the bootcamp and a lot of long hours will gave me solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> I know the journey will be long and I am ready for it! <br>  
-    
- 
+    Technology and programming always been my passion, but life moved me around and I never really give it a chance, 
+    <strong> never till now!</strong> <br> Last year, I decide to take my passion and really give it the time that it deserved. 
+    I decide to start my journey my first step was self-study, spending hours reading and watching a lot of what the web can 
+    offer about programming. Day by day I made little steps till I realised that it was time to fully dive in with something more.
+    <br> First I decide to buy myself an online course, then to join a bootcamp, JustIT offered me the opportunity, the bootcamp 
+    and a lot of long hours gave me a solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> 
+    I know the journey will be long and I am ready for it! <br> 
+  </div>
 </div>
-  <!-- <nav class="menu">
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-bars"></i>MENU</a>
-             <ul>
-              <li><a href="#">About myself</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contacts</a></li>
-             </ul>
-            </li>
-        </ul>
-    </nav>
-    --> 
-      <div id="myskills">
-        <h3 class="title"> MY SKILLS </h3>
-        <a href="#"><img src="/image/html-5.png" alt="logohtml" class="htmlproj"></a>
-        <a href="#"> <img src="/image/css-3.png" alt="logocss" class="cssproj"></a>
-        <a href="#"> <img src="/image/javascript.png" alt="logojs" class="jsproj"></a>
-        <a href="#"> <img src="/image/sql.png" alt="logosql" class="sql"></a>
-        <a href="#"> <img src="/image/python.png" alt="logophyton" class="phyt"></a>
-     </div>
+<!-- <div id="heroimg">
+  <h2 id="about" class="animate__animated animate__rubberBand animate__delay-5s animate__repeat-3" >ABOUT ME</h2>
+  <p id="aboutpara">
+    “Hello, I’m Daniele"<br>
+    Technology and programming always been my passion, but life moved me around and I never really give it a chance, 
+    <strong> never till now!</strong> <br> Last year, I decide to take my passion and really give it the time that it deserved. 
+    I decide to start my journey my first step was self-study, spending hours reading and watching a lot of what the web can 
+    offer about programming. Day by day I made little steps till I realised that it was time to fully dive in with something more.
+    <br> First I decide to buy myself an online course, then to join a bootcamp, JustIT offered me the opportunity, the bootcamp 
+    and a lot of long hours gave me a solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> 
+    I know the journey will be long and I am ready for it! <br> 
+</div> -->
+    <div id="box">
+    <h3 class="titl"> MY SKILLS </h3>
+    <div id="myskills">
+        <a href="#"><img src="/image/html-5.png" alt="logohtml" class="htmlproj animate__animated animate__fadeIn animate__slower" ></a>
+        <a href="#"><img src="/image/css-3.png" alt="logocss" class="cssproj animate__animated animate__fadeIn animate__delay-1s animate__slower"></a>
+        <a href="#"><img src="/image/javascript.png" alt="logojs" class="jsproj animate__animated animate__fadeIn animate__delay-2s animate__slower"></a>
+        <a href="#"><img src="/image/sql.png" alt="logosql" class="sql animate__animated animate__fadeIn animate__delay-3s animate__slower"></a>
+        <a href="#"><img src="/image/python.png" alt="logophyton" class="phyt animate__animated animate__fadeIn animate__delay-4s animate__slower"></a>
+    </div>
+  </div>
+    <div id="project">
+      <div class="proj" id="projleft">
+        <h3>Project 1</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+      <div class="proj" id="projright">
+        <h3>Project 2</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+      <div class="proj" id="projright">
+        <h3>Project 3</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+      <div class="proj" id="projleft">
+        <h3>Project 4</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+      <div class="proj" id="projleft">
+        <h3>Project 5</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+      <div class="proj" id="projright">
+        <h3>Project 6</h3>
+        <img src="/image/barrier.png" alt="proj">
+      </div>
+    </div>
+ 
     <form id="contacts">
       <input type="text" id="first" name="first" placeholder="Your Name" required class="name">
       <input type="email" id="email" name="email" placeholder="Your Email"required class="email">
@@ -61,10 +101,11 @@
 
 <footer>
   <a href=""><img src="/image/github.png" alt="github" class="social"><span></a>
-  <a href=""><img src="/image/linkedin.png" alt="github" class="social"></a>
+  <a href=""><img src="/image/linkedin.png" alt="linkedin" class="social"></a>
    <p class="myname">DANIELE TURSI</p>
    <p class="myemail">tursidaniele@gmail.com</p>
    <p class="myphone">+44 7511549707</p>
 </footer>
+<script src="/javascript.js"></script>
 </body>
 

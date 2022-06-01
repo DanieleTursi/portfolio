@@ -10,11 +10,53 @@ body {
     box-sizing: border-box;
     width:100%;
     background-color: black;
+    overflow-x:hidden;
+    /* animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
 }
+
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+     }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+     }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+     }
+ 
+} */
 
 /* NAV section css*/
 
+
+span {
+    animation:typing 2s linear infinite;
+}
+
+@keyframes typing {
+    50% {
+        opacity:0;
+    }
+}
+
+#message {
+    color: white;
+}
+
 #header {
+    width:100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +64,7 @@ body {
     gap:150px;
     background-color: rgb(8, 25, 84);
     box-shadow: 0px 20px 20px rgb(8, 25, 84);
+    z-index: 2;
 }
 
 #header ul li {
@@ -44,20 +87,18 @@ body {
     padding-bottom: 1vw;
 }
 
+#header ul img {
+    width:2.5vw;
+    height: 2.5vw;
+    padding-right: 10px;
+}
+
 
 #header h1 {
     font-family: 'Caveat', cursive;
     color: white;
     margin:0;  
     font-size:4vw ;
-    padding-left: 15px;
-}
-
-#logo{
-    font-family: 'Caveat', cursive;
-    color: white;
-    margin:0;  
-    font-size:4vw;
     padding-left: 15px;
 }
 
@@ -71,72 +112,48 @@ body {
     box-shadow: 0px 10px 10px white;
 }
 
-/* #header h1:hover{
-    text-shadow:1px 1px 2px rgb(238, 253, 252);
-} */
-
-/* HERO IMAGE SESSION */
-
-#heroimg {
- background:url(/image/milky-way-984050_1280.jpeg);
- background-size:cover;
- width:100%;
- height:500px;
- box-shadow: inset  0px -100px 100px black;
-}
 
 .sticky {
     width:100%;
     position:fixed;
 }
 
-.menu {
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin:0;
-}
+/* HERO IMAGE SESSION */
 
-.menu i{
-    padding-right:4px;
-}
-
-.menu ul a{
-     text-decoration:none;
-     color:white;
-
-}
-.menu li {
-    color:white;
-    list-style-type:none;
-}
-
-.menu ul{
-    margin-top: 0px;
-}
-
-
-a {
-    color:white;
-    cursor:pointer;
-}
-
-.menu ul li a:hover{
-    background-color:rgba(191, 44, 44, 0.4) ;
-}
-
-.menu ul li a i:hover{
-    background-color:rgba(191, 44, 44, 0.4) ;
-}
-
-.menu ul li ul {
-    display:none;
-}
-
-.menu ul li:hover ul{
-    display:block;
+#heroimg {
+ background:url(/image/39632.webp);
+ background-size:cover;
+ width:100%;
+ height:auto;
+ box-shadow: inset  0px -100px 100px black;
 }
 
 /* ABOUT section css*/
+
+.video-container {
+    height:auto;
+    width: 100%;
+    position: relative;
+    padding-top:20px
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  box-shadow: inset 0px 0px 20px 30px black;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+
+}
 
 #about {
     color:white;
@@ -145,6 +162,7 @@ a {
     text-align: center;
     font-size: 4vw;
     font-family: 'Caveat', cursive;
+    text-shadow: 5px 5px black;
 }
 
 #aboutpara {
@@ -155,60 +173,122 @@ a {
     font-size: 2.2vw;
 }
 
-
-
 /* MYSKILLS section css*/
 
+#box {
+    background-color: rgb(8, 25, 84);
+    box-shadow: inset 0px 0px 20px 30px black;
+    margin:0 15%
+}
 
-.title {
-    grid-area:tit;
+.titl {
+    text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 3vw;
     text-shadow: 5px 5px black;
     color:white;
+    margin:1vw 0 0 0;
+    padding: 1vw 0 0 0;
 }
+
 .htmlproj{
     grid-area:htm;
-    width: 10vw;
-    height: 12vw;
+    width: 6vw;
+    height: 7vw;
 }
 
 .cssproj{
     grid-area:cs;
-    width: 10vw;
-    height: 12vw;
+    width: 6vw;
+    height: 7vw;
   }
 
 .jsproj{
     grid-area:java;
-    width: 10vw;
-    height: 12vw;
+    width: 6vw;
+    height: 7vw;
 }
 
 .sql {
     grid-area:sq;
-    width: 10vw;
-    height: 12vw;
+    width: 6vw;
+    height: 7vw;
 }
 
 .phyt {
     grid-area:phyt;
-    width: 10vw;
-    height: 12vw;
+    width: 6vw;
+    height: 7vw;
 }
 
 #myskills {
-    width:100%;
-    height:100%;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 16% 16% 16% 16% 16% ;
+    grid-template-rows: 12vw;
     grid-template-areas:
-    '  . . tit . .  '
-    ' htm cs java sq phyt ';
+    'htm cs java sq phyt';
     gap:10px;
+    justify-items: center;
+    align-items: center;
+    margin:0 3% 0 17%;
+}
+
+/* PROJECT section  */
+
+#project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:0;
+}
+.proj{
+    width: 300px;
+    height:300px;
     background-color: rgb(8, 25, 84);
-    box-shadow: inset 0px 0px 20px 20px black;
+    border:5px solid white;
+    margin: 5%;
+    border-radius: 20px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.show {
+    transform: translateX(0);
+  }
+.proj img {
+    width:60%;
+    height: 60%;
+    padding: 0 18%;
+}
+
+.proj:hover {
+    animation: rotation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity:0.5;
+}
+
+@keyframes rotation {
+    20% {
+        transform:rotate(-180deg);
+    }
+    40% {
+        transform:rotate(180deg);
+    }
+    60% {
+        transform:rotate(-180deg);
+    }
+    80% {
+        transform:rotate(180deg);
+    }
+}
+
+#project h3 {
+    font-size:2vw;
+    color: white;
+    text-align:center;
+    text-transform: uppercase;
 }
 
 /* CONTACTS section*/
@@ -222,8 +302,6 @@ a {
     border-radius: 5px;
     font-size:2vw;
 }
-
-
 
 .email{
     grid-area: email;
@@ -271,11 +349,8 @@ a {
     height:1.5vw;
 }
 
-
-
-
 #contacts {
-    background:url(/image/ca_space.webp);
+    background:url(/image/galaxy.webp);
     background-size: cover;
     background-repeat: no-repeat;
     display:grid;
@@ -292,7 +367,7 @@ a {
     box-shadow: inset  0px 50px 100px black;
 }
 
-
+/* FOOTER section */
 
 footer {
     width:100%;
@@ -328,5 +403,234 @@ footer {
     width:3vw;
 }
 
+
+
+@media (max-width:768px){
+
+    /* NAV section css*/
+
+    #header {
+        width: 100%;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:40px;
+        background-color: rgb(8, 25, 84);
+        box-shadow: 0px 20px 20px rgb(8, 25, 84);
+        z-index: 2;
+    }
+
+    #header ul li a {
+        text-decoration:none;
+        margin-right: 5px;
+        font-family: 'Teko', sans-serif;
+        font-size: 1.5vh;
+    }
+
+    #header h1 {
+        font-family: 'Caveat', cursive;
+        color: white;
+        margin:0;  
+        font-size:3vh ;
+        padding-left: 10px;
+    }
+
+   /* ABOUT section */
+    .video-container{
+        background:url(/image/39632.webp);
+        background-size:cover;
+        width:100%;
+        height:auto;
+        box-shadow: inset  0px -100px 100px black;
+       }
+    
+       .video-container video {
+           display:none;
+       }
+
+    #about {
+        color:white;
+        padding-top: 10vh;
+        padding-bottom: 0;
+        text-align: center;
+        font-size: 3vh;
+        font-family: 'Caveat', cursive;
+        text-shadow: 5px 5px black;
+    }
+    
+    #aboutpara {
+        color:white;
+        padding: 1vw 6vw;
+        text-align: center;
+        font-family: 'Teko', sans-serif;
+        font-size: 2.5vh;
+    }
+
+    /* MYSKILLS section css*/
+
+
+    #box {
+        background-color: rgb(8, 25, 84);
+        box-shadow: inset 0px 0px 20px 15px black;
+    }
+    
+    .titl {
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        font-size: 2.5vh;
+        text-shadow: 5px 5px black;
+        color:white;
+        margin:2vh 0 0 0;
+        padding:0 2vh;
+    }
+    
+    .htmlproj{
+        grid-area:htm;
+        width: 6vh;
+        height: 7vh;
+    }
+    
+    .cssproj{
+        grid-area:cs;
+        width: 6vh;
+        height: 7vh;
+      }
+    
+      .jsproj{
+        grid-area:java;
+        width: 6vh;
+        height: 7vh;
+    }
+    
+    .sql {
+        grid-area:sq;
+        width: 6vh;
+        height: 7vh;
+    }
+    
+    .phyt {
+        grid-area:phyt;
+        width: 6vh;
+        height: 7vh;
+    }
+    
+    #myskills {
+        display:grid;
+        grid-template-columns: 16% 16% 16% 16% 16% ;
+        grid-template-rows: 12vh;
+        grid-template-areas:
+        'htm cs java sq phyt';
+        gap:10px;
+        justify-items: center;
+        align-items: center;
+        margin:0 3% 0 10%;
+    }
+
+    /* PROJECTS section*/
+
+    .proj{
+        width: 200px;
+        height:200px;
+        background-color: rgb(8, 25, 84);
+        border:5px solid white;
+        margin: 5%;
+        border-radius: 20px;
+    }
+
+    #project h3 {
+        font-size:2vh;
+        color: white;
+        text-align:center;
+        text-transform: uppercase;
+    }
+
+    /* CONTACTS section*/
+
+    .submit{
+        grid-area: sub;
+        font-size: 2vh;
+        width:10vh;
+        background-color: rgba(255, 255, 255, 0.492);
+        border-radius:5px;
+        font-family: 'Teko', sans-serif;
+        margin-right:4vh;
+    }
+    
+    .submit img {
+        width: 1.5vh;
+        height:1.5vh;
+    }
+    .reset{
+        grid-area: res;
+        font-size: 2vh;
+        background-color: rgba(255, 255, 255, 0.492);
+        border-radius:5px;
+        font-family: 'Teko', sans-serif;
+        width:10vh;
+        margin-left:4vh;
+    }
+    
+    .reset img {
+        width: 1.5vh;
+        height:1.5vh;
+    }
+
+    #contacts {
+        background:url(/image/ca_space.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display:grid;
+        grid-template-columns: 8% 30% 30% 8%;
+        grid-template-rows: 5vh 5vh 15vh 3.2vh;
+        grid-template-areas:
+        '. name name . ' 
+        '. email email .'
+        '. comment comment .'
+        '. sub res .';
+        grid-gap:20px;
+        padding:10px 0 10px 0;
+        margin:0;
+        box-shadow: inset  0px 20px 50px black;
+    }
+
+    /* FOOTER section */
+
+footer {
+    width:100%;
+    margin:0;
+    background-color: rgb(8, 25, 84);
+    color: white;
+    text-align:center;
+    padding:10px 0;
+    box-shadow: 0px -10px 20px rgb(8, 25, 84);
+}
+
+.myname{
+    margin:1vw 0;
+    font-size: 1.8vh;
+    font-family: 'Caveat', cursive;
+    font-style: bold;
+}
+
+.myemail{
+    margin:1vw 0;
+    font-size: 1.5vh;
+    font-family: 'Teko', sans-serif;
+}
+
+.myphone{
+    margin:1vw 0;
+    font-size: 1.5vh;
+    font-family: 'Teko', sans-serif;
+}
+
+.social {
+    height:3vh;
+    width:3vh;
+}
+    
+}
     
 
