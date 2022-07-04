@@ -7,39 +7,44 @@
     <link rel="stylesheet" href="/css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Teko:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/cb1ab0e1bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/tursi-daniele-favicon.png">
     <title>PORTFOLIO</title>
 </head>
 <body>
-    <nav>
-      <div id="header" class="sticky">
-        <h1 id="message"></h1>
-        <ul>
-            <li><a href="#heroimg" >ABOUT ME</a></li>
-            <li><a href="#myskills" >SKILLS</a></li>
-            <li><a href="#projects" >PROJECTS</a></li>
-            <li><a href="#contacts" >CONTACTS</a></li>
-            <img src="/image/night.png" alt="nightday" id="nightdaymode">
-        </ul>
-      </div>
-</nav>
+  <header class="darkheader">
+    <nav class="navbar">
+        <a class="nav-logo" href="#about"><img src="/image/tursi-daniele-logo_white.png" alt=""></a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#about" class="nav-link" >ABOUT ME</a></li>
+            <li class="nav-item"><a href="#boxskills" class="nav-link">SKILLS</a></li>
+            <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
+            <li class="nav-item"><a href="#Contacts" class="nav-link">CONTACTS</a></li>
+            <img src="/image/night.png" alt="sunmoon" id="ndmode" >
+          </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </nav>
+  </header>
 <div class="video-container">
-  <video autoplay muted loop>
-      <source src="/image/Pexels Videos 3931.mp4" type="video/mp4" />
+  <video autoplay muted loop playsinline>
+      <source src="/image/earthzoomout.mp4" type="video/mp4" id="source" />
   </video>
-  <div class="caption">
-    <h2 id="about" class="animate__animated animate__rubberBand animate__delay-5s animate__repeat-3" >ABOUT ME</h2>
-  <p id="aboutpara">
-    “Hello, I’m Daniele"<br>
-    Technology and programming always been my passion, but life moved me around and I never really give it a chance, 
-    <strong> never till now!</strong> <br> Last year, I decide to take my passion and really give it the time that it deserved. 
-    I decide to start my journey my first step was self-study, spending hours reading and watching a lot of what the web can 
-    offer about programming. Day by day I made little steps till I realised that it was time to fully dive in with something more.
-    <br> First I decide to buy myself an online course, then to join a bootcamp, JustIT offered me the opportunity, the bootcamp 
-    and a lot of long hours gave me a solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> 
-    I know the journey will be long and I am ready for it! <br> 
+  <div class="caption" id="about">
+    <h2 class="about" >Junior Software Developer</h2>
+  <p class="message">
+    “Hello, I’m Daniele"
+  </p>
+    <p class="aboutpara">
+    Technology and programming always been my passion, challenges my energy. <br>
+    I love to work in a team and independently, I truly think that those two combined to comunication, <br> together lead to great results.
+    Learn from others and help others to learn from you, I am curious, I simply enjoy to explore and learn.
+  </p>
   </div>
 </div>
 <!-- <div id="heroimg">
@@ -54,57 +59,55 @@
     and a lot of long hours gave me a solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> 
     I know the journey will be long and I am ready for it! <br> 
 </div> -->
-    <div id="box">
+    <div class="box" id="boxskills">
     <h3 class="titl"> MY SKILLS </h3>
     <div id="myskills">
         <a href="#"><img src="/image/html-5.png" alt="logohtml" class="htmlproj animate__animated animate__fadeIn animate__slower" ></a>
         <a href="#"><img src="/image/css-3.png" alt="logocss" class="cssproj animate__animated animate__fadeIn animate__delay-1s animate__slower"></a>
         <a href="#"><img src="/image/javascript.png" alt="logojs" class="jsproj animate__animated animate__fadeIn animate__delay-2s animate__slower"></a>
         <a href="#"><img src="/image/sql.png" alt="logosql" class="sql animate__animated animate__fadeIn animate__delay-3s animate__slower"></a>
-        <a href="#"><img src="/image/python.png" alt="logophyton" class="phyt animate__animated animate__fadeIn animate__delay-4s animate__slower"></a>
+        <a href="#"><img src="/image/mongodb.png" alt="logomongobd" class="mngdb animate__animated animate__fadeIn animate__delay-4s animate__slower" ></a>
+        <a href="#"><img src="/image/python.png" alt="logophyton" class="phyt animate__animated animate__fadeIn animate__delay-5s animate__slower"></a>
     </div>
   </div>
     <div id="project">
-      <div class="proj" id="projleft">
+      <div class="proj projleft">
         <h3>Project 1</h3>
         <img src="/image/barrier.png" alt="proj">
       </div>
-      <div class="proj" id="projright">
+      <div class="proj projleft" >
         <h3>Project 2</h3>
         <img src="/image/barrier.png" alt="proj">
       </div>
-      <div class="proj" id="projright">
+      <div class="proj projleft">
         <h3>Project 3</h3>
         <img src="/image/barrier.png" alt="proj">
       </div>
-      <div class="proj" id="projleft">
-        <h3>Project 4</h3>
-        <img src="/image/barrier.png" alt="proj">
-      </div>
-      <div class="proj" id="projleft">
-        <h3>Project 5</h3>
-        <img src="/image/barrier.png" alt="proj">
-      </div>
-      <div class="proj" id="projright">
-        <h3>Project 6</h3>
-        <img src="/image/barrier.png" alt="proj">
-      </div>
     </div>
- 
-    <form id="contacts">
-      <input type="text" id="first" name="first" placeholder="Your Name" required class="name">
-      <input type="email" id="email" name="email" placeholder="Your Email"required class="email">
-      <input type="textarea" id="comment" name="comment" placeholder="Your Message"required class="comment">
-      <button type="submit" name="submit" id="subm" class="submit" > <img src="/image/paper-plane.png" alt="paperplane"> SEND</button>
-      <button type="reset" name="submit" id="cl" class="reset"> <img src="/image/eraser.png" alt="paperplane"> RESET</button>
+    <div id="mycv">
+    <button class="cv"><a href="/CV Daniele Tursi.pdf" target="_blank">View my CV</a></button>
+    </div>
+    <form class="contacts" id="Contacts" action="https://formspree.io/f/xlezkkod" method="POST" >
+      <input type="text" id="first" name="first" placeholder="Your Name" required class="name slidin">
+      <input type="email" id="email" name="email" placeholder="Your Email"required class="email slidin">
+      <textarea id="comment" name="comment" placeholder="Your Message"required class="comment slidin"></textarea>
+      <button type="submit" name="submit" id="subm" class="submit slidin2" > <img src="/image/paper-plane.png" alt="paperplane"></button>
+      <button type="reset" name="submit" id="cl" class="reset slidin2"> <img src="/image/eraser.png" alt="paperplane"></button>
     </form>
+   
 
-<footer>
+<footer class="darkfooter">
+<div class="foot">
+  <div class="copyright">
+     <p class="info"><i class="fa-solid fa-phone"></i>+44 7511549707</p>
+     <p class="info"><i class="fa-solid fa-at"></i>  tursidaniele@gmail.com</p>
+     <p class="myname"><i class="fa-regular fa-copyright"></i>DANIELE TURSI . 2022 </p>
+    </div>
+  <div class="social">
   <a href=""><img src="/image/github.png" alt="github" class="social"><span></a>
-  <a href=""><img src="/image/linkedin.png" alt="linkedin" class="social"></a>
-   <p class="myname">DANIELE TURSI</p>
-   <p class="myemail">tursidaniele@gmail.com</p>
-   <p class="myphone">+44 7511549707</p>
+  <a href="https://www.linkedin.com/search/results/all/?keywords=daniele%20tursi&origin=RICH_QUERY_SUGGESTION&position=0&searchId=b5ac9e9d-77aa-43c5-986a-7a17444987dc&sid=~jB"><img src="/image/linkedin.png" alt="linkedin" class="social"></a>
+  </div>
+</div>
 </footer>
 <script src="/javascript.js"></script>
 </body>
