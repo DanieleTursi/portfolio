@@ -20,7 +20,7 @@
         <ul class="nav-menu">
             <li class="nav-item"><a href="#about" class="nav-link" >ABOUT ME</a></li>
             <li class="nav-item"><a href="#boxskills" class="nav-link">SKILLS</a></li>
-            <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
+            <li class="nav-item"><a href="#projectref" class="nav-link">PROJECTS</a></li>
             <li class="nav-item"><a href="#Contacts" class="nav-link">CONTACTS</a></li>
             <img src="/image/night.png" alt="sunmoon" id="ndmode" >
           </ul>
@@ -31,35 +31,24 @@
         </div>
     </nav>
   </header>
-<div class="video-container">
+<div class="video-container" id="about">
   <video autoplay muted loop playsinline>
       <source src="/image/earthzoomout.mp4" type="video/mp4" id="source" />
   </video>
-  <div class="caption" id="about">
+  <div class="caption">
     <h2 class="about" >Junior Software Developer</h2>
   <p class="message">
     “Hello, I’m Daniele"
   </p>
-    <p class="aboutpara">
+    <p class="aboutpara" id="boxskills">
     Technology and programming always been my passion, challenges my energy. <br>
-    I love to work in a team and independently, I truly think that those two combined to comunication, <br> together lead to great results.
-    Learn from others and help others to learn from you, I am curious, I simply enjoy to explore and learn.
+    I love to work in a team and independently, I truly think that those two combined to comunication, together lead to great results.
+    <br> Learn from others and help others to learn from you, I am curious, I simply enjoy to explore and learn.
   </p>
   </div>
 </div>
-<!-- <div id="heroimg">
-  <h2 id="about" class="animate__animated animate__rubberBand animate__delay-5s animate__repeat-3" >ABOUT ME</h2>
-  <p id="aboutpara">
-    “Hello, I’m Daniele"<br>
-    Technology and programming always been my passion, but life moved me around and I never really give it a chance, 
-    <strong> never till now!</strong> <br> Last year, I decide to take my passion and really give it the time that it deserved. 
-    I decide to start my journey my first step was self-study, spending hours reading and watching a lot of what the web can 
-    offer about programming. Day by day I made little steps till I realised that it was time to fully dive in with something more.
-    <br> First I decide to buy myself an online course, then to join a bootcamp, JustIT offered me the opportunity, the bootcamp 
-    and a lot of long hours gave me a solid base to switch to what I really wanted in my life,<strong> coding! </strong><br> 
-    I know the journey will be long and I am ready for it! <br> 
-</div> -->
-    <div class="box" id="boxskills">
+<div>
+    <div class="box">
     <h3 class="titl"> MY SKILLS </h3>
     <div id="myskills">
         <a href="#"><img src="/image/html-5.png" alt="logohtml" class="htmlproj animate__animated animate__fadeIn animate__slower" ></a>
@@ -67,25 +56,26 @@
         <a href="#"><img src="/image/javascript.png" alt="logojs" class="jsproj animate__animated animate__fadeIn animate__delay-2s animate__slower"></a>
         <a href="#"><img src="/image/sql.png" alt="logosql" class="sql animate__animated animate__fadeIn animate__delay-3s animate__slower"></a>
         <a href="#"><img src="/image/mongodb.png" alt="logomongobd" class="mngdb animate__animated animate__fadeIn animate__delay-4s animate__slower" ></a>
-        <a href="#"><img src="/image/python.png" alt="logophyton" class="phyt animate__animated animate__fadeIn animate__delay-5s animate__slower"></a>
+        <a href="#"><img src="/image/python.png" alt="logophyton" id="projectref" class="phyt animate__animated animate__fadeIn animate__delay-5s animate__slower"></a>
     </div>
   </div>
+</div>
     <div id="project">
-      <div class="proj projleft">
-        <h3>Project 1</h3>
-        <img src="/image/barrier.png" alt="proj">
+      <div class="projleft">
+        <a onmouseover="displayDesc(this)" href="https://calculator-one-pearl.vercel.app/" target="_blank"><img src="/image/calculator.png" alt="calculatorproject"></a>
+        <p class="projdesc">HTML, CSS, JAVASCRIPT</p>
       </div>
-      <div class="proj projleft" >
-        <h3>Project 2</h3>
-        <img src="/image/barrier.png" alt="proj">
+      <div class="projleft" >
+        <img src="/image/calculator.png" alt="calculatorproject">
+        <p class="projdesc">HTML, CSS, JAVASCRIPT</p>
       </div>
-      <div class="proj projleft">
-        <h3>Project 3</h3>
-        <img src="/image/barrier.png" alt="proj">
+      <div class="projleft">
+        <img src="/image/calculator.png" alt="calculatorproject">
+        <p class="projdesc">HTML, CSS, JAVASCRIPT</p>
       </div>
     </div>
     <div id="mycv">
-    <button class="cv"><a href="/CV Daniele Tursi.pdf" target="_blank">View my CV</a></button>
+    <button class="cv"><a href="/CV-DANIELE TURSI.pdf" target="_blank">View my CV</a></button>
     </div>
     <form class="contacts" id="Contacts" action="https://formspree.io/f/xlezkkod" method="POST" >
       <input type="text" id="first" name="first" placeholder="Your Name" required class="name slidin">
@@ -93,9 +83,7 @@
       <textarea id="comment" name="comment" placeholder="Your Message"required class="comment slidin"></textarea>
       <button type="submit" name="submit" id="subm" class="submit slidin2" > <img src="/image/paper-plane.png" alt="paperplane"></button>
       <button type="reset" name="submit" id="cl" class="reset slidin2"> <img src="/image/eraser.png" alt="paperplane"></button>
-    </form>
-   
-
+    </form>   
 <footer class="darkfooter">
 <div class="foot">
   <div class="copyright">
@@ -104,7 +92,7 @@
      <p class="myname"><i class="fa-regular fa-copyright"></i>DANIELE TURSI . 2022 </p>
     </div>
   <div class="social">
-  <a href=""><img src="/image/github.png" alt="github" class="social"><span></a>
+  <a href="https://github.com/DanieleTursi?tab=repositorieshttps://github.com/DanieleTursi?tab=repositories"><img src="/image/github.png" alt="github" class="social"><span></a>
   <a href="https://www.linkedin.com/search/results/all/?keywords=daniele%20tursi&origin=RICH_QUERY_SUGGESTION&position=0&searchId=b5ac9e9d-77aa-43c5-986a-7a17444987dc&sid=~jB"><img src="/image/linkedin.png" alt="linkedin" class="social"></a>
   </div>
 </div>

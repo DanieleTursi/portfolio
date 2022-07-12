@@ -1,4 +1,6 @@
 
+
+
 var messageArray= ["Hello, I’m Daniele"];
 var textPosition= 0;
 var speed= 200;
