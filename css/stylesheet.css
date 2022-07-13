@@ -99,7 +99,7 @@ li{
     text-decoration: none;
     font-family: var(--fontpara);
     font-size: 18px;
-    transition: 0.7s ease;
+    transition: 0.2s ease;
 }
 
 .lightnav-link{
@@ -300,10 +300,6 @@ ul img{
     opacity:0;
 }
 
-.displaydescon {
-    opacity:1;
-}
-
 .projdesc {
     text-align: center;
     font-size:20px;
@@ -340,10 +336,7 @@ h4{
 }
 
 @keyframes zoominout {
-    20% {
-        transform:scale(1.1);
-    }
-    60% {
+    10% {
         transform:scale(0.9);
     }
     100%{

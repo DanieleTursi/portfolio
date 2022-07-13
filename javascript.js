@@ -1,10 +1,12 @@
-var displayd= document.querySelectorAll(".projectleft")
-var desc=document.querySelectorAll(".displaydesc")
-displayd.forEach(e=>{
-e.addEventListener( "mouseenter", ()=> {
-  desc[e].classList.toggle("displaydescon");
-  console.log("works")
-});
+var displayd=Array.from(document.querySelectorAll(".projleft"))
+var desc=Array.from(document.querySelectorAll(".displayd1"))
+displayd.forEach(e => {
+  e.addEventListener("mouseover", () => {
+    e.childNodes[3].classList.remove('displaydesc')
+  });
+  e.addEventListener("mouseleave", () => {
+    e.childNodes[3].classList.add('displaydesc')
+  });
 })
 
 
@@ -47,9 +49,6 @@ function slideIn2(){
       if (boxTop < triggerBottom) {
       element.classList.add('show');
     } 
-  //   else {
-  //     element.classList.remove('show');
-  // }
   ;
 });
 }
@@ -66,9 +65,6 @@ function slideIn3(){
       if (boxTop < triggerBottom) {
       element.classList.add('show');
     } 
-  //   else {
-  //     element.classList.remove('show');
-  // }
   ;
 });
 }
@@ -84,9 +80,6 @@ function slideIn4(){
       if (boxTop < triggerBottom) {
       element.classList.add('show');
     }
-  //    else {
-  //     element.classList.remove('show');
-  // }
   ;
 });
 }
