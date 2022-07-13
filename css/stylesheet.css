@@ -29,15 +29,6 @@ body {
 
 /* NAV section css*/
 
-span {
-    animation:typing 2s linear infinite;
-}
-
-@keyframes typing {
-    50% {
-        opacity:0;
-    }
-}
 
 .message {
     font-family: 'Caveat', cursive;
@@ -233,16 +224,16 @@ ul img{
     margin:10% 6%;
 }
 
-.lightskills {
-    background-color: rgba(40, 101, 221, 0.946);
+.lightbox {
+    background-color: rgb(56, 110, 218);
     box-shadow: inset 0px 0px 30px 30px var(--lblue);
-    margin:5% 6%;
+    margin:10% 6%;
 }
 
 .titl {
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 2px 2px black;
     margin:30px 0 ;
     padding: 30px 0 0 0;
@@ -257,52 +248,20 @@ ul img{
     padding: 30px 0 0 0;
 }
 
-.htmlproj{
-    grid-area:htm;
-    width: 7vw;
-    height: 8.5vw;
-}
-
-.cssproj{
-    grid-area:cs;
-    width: 7vw;
-    height: 8.5vw;
-  }
-
-.jsproj{
-    grid-area:java;
-    width: 7vw;
-    height: 8.5vw;
-}
-
-.sql {
-    grid-area:sq;
-    width: 7vw;
-    height: 8.5vw;
-}
-
-.phyt {
-    grid-area:pyth;
-    width: 7vw;
-    height: 8.5vw;
-}
-
-.mngdb {
-    grid-area:mngdb;
-    width: 7vw;
+.icon {
+    width: 8vw;
     height: 8.5vw;
 }
 
 #myskills {
-    display:grid;
-    grid-template-columns: 16% 16% 16% 16% 16% 16%;
-    grid-template-rows: 12vw;
-    grid-template-areas:
-    'htm cs java sq mngbd pyth';
-    gap:10px;
-    justify-items: center;
-    align-items: center;
-    margin:0 3% 0 3%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:40px;
+}
+
+#myskills img{
+  margin:20px auto;
 }
 
 /* PROJECT section  */
@@ -337,9 +296,19 @@ ul img{
     border-radius: 20px;
 }
 
+.displaydesc {
+    opacity:0;
+}
+
+.displaydescon {
+    opacity:1;
+}
+
 .projdesc {
     text-align: center;
-    font-size:30px;
+    font-size:20px;
+    font-style: italic;
+    margin-top:0;
 }
 
 
@@ -362,6 +331,12 @@ ul img{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity:0.5;
+}
+
+h4{
+    text-align:center;
+    font-size:24px;
+    margin:20px auto 0 auto;
 }
 
 @keyframes zoominout {
@@ -574,6 +549,14 @@ ul img{
     font-family:var(--fontpara) ;
 }
 
+.infoa{
+    text-decoration: none;
+    margin:5px 0;
+    color:white;
+    font-size: 16px;
+    font-family:var(--fontpara) ;
+}
+
 .info i {
     padding-right:5px;
 }
@@ -618,7 +601,7 @@ ul img{
         background-color: var(--dblue);
         width:100%;
         text-align: center;
-        padding: 0 0 10px 0;
+        padding: 0 0 40px 0;
         transition: 0.3s;
     }
 
@@ -631,7 +614,7 @@ ul img{
         background-color: var(--lblue);
         width:100%;
         text-align: center;
-        padding: 0 0 10px 0;
+        padding: 0 0 40px 0;
         transition: 0.3s;
     }
 
@@ -673,9 +656,6 @@ ul img{
 
     /* MYSKILLS section css*/
 
-    #boxskills{
-        overflow:hidden;
-    }
 
     #myskills {
         border:none;
@@ -684,70 +664,31 @@ ul img{
         background-color: var(--dblue);   
     }
 
-    .lightskills {
+    .lightbox {
         background-color: rgba(40, 101, 221, 0.946);
-        margin:10% 15% 0 15%;
     }
     
     .titl {
         text-shadow: 5px 5px black;
         margin:0;
+        font-size:26px;
     }
 
     .lighttitl {
         text-shadow: 2px 2px black;
         margin:10px 0 15px 0;
     }
-    
-    .htmlproj{
-        grid-area:htm;
-        width: 6vh;
-        height: 7vh;
-    }
-    
-    .cssproj{
-        grid-area:cs;
-        width: 6vh;
-        height: 7vh;
-      }
-    
-    .jsproj{
-        grid-area:java;
-        width: 6vh;
-        height: 7vh;
-    }
-    
-    .sql {
-        grid-area:sq;
-        width: 6vh;
-        height: 7vh;
-    }
-    
-    .phyt {
-        grid-area:phyt;
-        width: 6vh;
-        height: 7vh;
-    }
 
-    .mngdb {
-        grid-area:mngdb;
-        width: 6vh;
-        height: 7vh;
-    }
-    
     #myskills {
-        display:grid;
-        grid-template-columns: 20% 20% 20% ;
-        grid-template-rows: 10vh 10vh;
-        grid-template-areas:
-        'htm cs java '
-        'sq mngdb phyt';
-        gap:10px;
-        justify-items: center;
-        align-items: center;
-        margin:0 auto 0 22%;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
+    .icon {
+        width:8vh;
+        height:8.5vh;
+    }
+    
     /* PROJECTS section*/
 
     .projleft {
@@ -859,6 +800,7 @@ footer {
     height:40px;
     width:40px;
 }
+
 .foot {
     display:block;
     flex-direction: row;

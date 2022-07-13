@@ -1,4 +1,11 @@
-
+var displayd= document.querySelectorAll(".projectleft")
+var desc=document.querySelectorAll(".displaydesc")
+displayd.forEach(e=>{
+e.addEventListener( "mouseenter", ()=> {
+  desc[e].classList.toggle("displaydescon");
+  console.log("works")
+});
+})
 
 
 var messageArray= ["Hello, I’m Daniele"];
@@ -104,7 +111,7 @@ console.log(videosrc);
 sunmoon.addEventListener('click',()=>{
   document.body.classList.toggle("lightbody");
   header[0].classList.toggle("lightheader");
-  skillbox[0].classList.toggle("lightskills");
+  skillbox[0].classList.toggle("lightbox");
   footer[0].classList.toggle("lightfooter");
   navmenu[0].classList.toggle("lightnav-menu");
   titleSkills[0].classList.toggle("lighttitl");
