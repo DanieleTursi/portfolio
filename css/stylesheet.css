@@ -98,7 +98,7 @@ li{
     color:white;
     text-decoration: none;
     font-family: var(--fontpara);
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.2s ease;
 }
 
@@ -671,6 +671,7 @@ h4{
     .lighttitl {
         text-shadow: 2px 2px black;
         margin:10px 0 15px 0;
+        font-size:26px;
     }
 
     #myskills {
