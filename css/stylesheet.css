@@ -31,7 +31,7 @@ body {
 
 
 .message {
-    font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size:46px;
     color:white;
     text-decoration: none;
@@ -39,7 +39,7 @@ body {
 }
 
 .lightmessage {
-    font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size:46px;
     color:var(--lblue);
     text-decoration: none;
@@ -184,9 +184,9 @@ ul img{
     padding-top: 100px;
     padding-bottom: 0;
     text-align: center;
-    font-size: 46px;
-    font-family: 'Caveat', cursive;
-    text-shadow: 5px 5px black;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px black;
 }
 
 .lightabout {
@@ -194,9 +194,9 @@ ul img{
     padding-top: 40px;
     padding-bottom: 0;
     text-align: center;
-    font-size: 46px;
-    font-family: 'Caveat', cursive;
-    text-shadow: 2px 2px white;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px white;
 }
 
 .aboutpara {
